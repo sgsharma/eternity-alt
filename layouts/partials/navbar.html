@@ -12,7 +12,7 @@
         </div>
     </div>
     {{ end }}
-    <div class="navbar-middle">
+    <div class="navbar-end">
         <a class="a-clean" href={{ relref . $homeLink }}><p class="welcome-title">{{ .Site.Title }}</p></a>
         {{ if not .IsHome }}
             {{ if and .Site.Menus .Site.Menus.main }}
@@ -31,7 +31,7 @@
             {{ end }}
         {{ end }}
     </div>
-    <div class="navbar-end">
+    <!-- <div class="navbar-end">
         <div class="socials">
             {{ $socials := .Site.Params.socials }}
             {{ if and .IsHome $socials }}
@@ -45,5 +45,5 @@
                 </div>
             {{ end }}
         </div>
-    </div>
+    </div> -->
 </nav>
